@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bi Bi Zainab | AIML Portfolio</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #100c24;
+  color: white;
+}
+
+/* Navigation */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  background: #1b1435;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  background: linear-gradient(90deg,#ff65c3,#42d9ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #ff65c3;
+}
+
+/* Common sections */
+section {
+  padding: 80px 10%;
+}
+
+.title {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 35px;
+  background: linear-gradient(90deg,#ff65c3,#42d9ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.gradient {
+  background: linear-gradient(90deg,#ff65c3,#42d9ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Home */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background:
+  radial-gradient(circle at 80% 20%,#542b83,transparent 35%),
+  radial-gradient(circle at 10% 80%,#30206e,transparent 35%);
+}
+
+.hero h3 {
+  color: #ff65c3;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(40px,7vw,70px);
+  margin-bottom: 15px;
+}
+
+.hero h2 {
+  margin-bottom: 15px;
+}
+
+.hero p {
+  color: #c9c3df;
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 650px;
+}
+
+.btn {
+  display: inline-block;
+  width: fit-content;
+  margin-top: 25px;
+  padding: 13px 27px;
+  border-radius: 30px;
+  background: linear-gradient(90deg,#ff65c3,#8370ff);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Cards */
+.card {
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.12);
+  padding: 28px;
+  border-radius: 18px;
+  margin-bottom: 20px;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #ff65c3;
+}
+
+.card h3 {
+  color: #ff85d0;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #c9c3df;
+  line-height: 1.8;
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skills span {
+  padding: 15px 25px;
+  border-radius: 12px;
+  background: linear-gradient(135deg,#492c72,#25235b);
+  border: 1px solid #7155a9;
+}
+
+/* Projects */
+.projects {
+  display: grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(230px,1fr));
+  gap: 20px;
+}
+
+/* Contact */
+.contact {
+  max-width: 650px;
+  margin: auto;
+  text-align: center;
+}
+
+.contact p {
+  margin: 15px;
+  color: #d3c9e8;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #0b0819;
+  color: #aaa1c5;
+}
+
+/* Mobile Responsive */
+@media(max-width:700px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  nav a {
+    margin: 0;
+  }
+
+  section {
+    padding: 60px 7%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<header>
+  <div class="logo">Zainab.</div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- Home -->
+<section class="hero" id="home">
+
+  <h3>WELCOME TO MY PORTFOLIO</h3>
+
+  <h1>Hi, I'm <br>
+  <span class="gradient">Bi Bi Zainab</span></h1>
+
+  <h2>AI & Machine Learning Student</h2>
+
+  <p>
+    I am an engineering student at Bapuji Institute
+    of Engineering and Technology, passionate about
+    programming, technology and innovation.
+    I enjoy learning new skills and exploring
+    Artificial Intelligence and Machine Learning.
+  </p>
+
+  <a href="#about" class="btn">
+    Explore My Portfolio →
+  </a>
+
+</section>
+
+<!-- About -->
+<section id="about">
+
+  <h2 class="title">About Me</h2>
+
+  <div class="card">
+    <h3>Hello! I'm Bi Bi Zainab</h3>
+
+    <p>
+      I am pursuing Bachelor of Engineering in
+      Artificial Intelligence and Machine Learning
+      at Bapuji Institute of Engineering and Technology.
+
+      I have basic knowledge of C Programming,
+      Python and Java. I am interested in learning
+      new technologies, improving my coding skills
+      and developing innovative solutions.
+      My goal is to build a successful career
+      in the IT industry.
+    </p>
+  </div>
+
+</section>
+
+<!-- Education -->
+<section id="education">
+
+  <h2 class="title">My Education</h2>
+
+  <div class="card">
+    <h3>Bachelor of Engineering (BE)</h3>
+
+    <p>Branch: Artificial Intelligence and Machine Learning</p>
+
+    <p>
+      College: Bapuji Institute of Engineering
+      and Technology
+    </p>
+
+    <p>Degree: BE / BTech</p>
+  </div>
+
+</section>
+
+<!-- Skills -->
+<section id="skills">
+
+  <h2 class="title">My Technical Skills</h2>
+
+  <div class="skills">
+    <span>C Programming</span>
+    <span>Basic Python</span>
+    <span>Java</span>
+  </div>
+
+</section>
+
+<!-- Projects -->
+<section id="projects">
+
+  <h2 class="title">My Projects</h2>
+
+  <div class="projects">
+
+    <div class="card">
+      <h3>Student Portfolio Website</h3>
+
+      <p>
+        A personal website developed using HTML
+        and CSS to showcase my education,
+        technical skills and achievements.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Python Mini Project</h3>
+
+      <p>
+        A beginner-level Python project to
+        practice programming concepts and
+        problem-solving skills.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>AIML Learning Project</h3>
+
+      <p>
+        Exploring basic Artificial Intelligence
+        and Machine Learning concepts through
+        beginner-level practical exercises.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Achievements -->
+<section id="achievements">
+
+  <h2 class="title">Achievements</h2>
+
+  <div class="card">
+    <h3>My Achievements</h3>
+
+    <p>
+      I am continuously improving my programming
+      knowledge and technical abilities.
+      Certificates, workshops and achievements
+      can be added here.
+    </p>
+  </div>
+
+</section>
+
+<!-- Contact -->
+<section id="contact">
+
+  <h2 class="title">Contact Me</h2>
+
+  <div class="card contact">
+
+    <h3>Let's Connect!</h3>
+
+    <p>Email: bibizainabmannodi4@gmail.com</p>
+
+    <p>Phone: Add your phone number</p>
+
+    <p>College: Bapuji Institute of Engineering
+    and Technology</p>
+
+    <p>Location: Davangere, Karnataka</p>
+
+  </div>
+
+</section>
+
+<!-- Footer -->
+<footer>
+
+  <p>
+    © 2026 Bi Bi Zainab |
+    All Rights Reserved
+  </p>
+
+</footer>
+<!-- Contact Section -->
+<section id="contact">
+
+  <h2 class="title">Contact Me</h2>
+
+  <div class="card contact">
+
+    <h3>Let's Connect!</h3>
+
+    <p>
+      Email:
+      <a href="bibizainabmannodi4@gmail.com"
+         style="color:#ff65c3;">
+         bibizainabmannodi4@gmail.com
+      </a>
+    </p>
+
+    <p>College: Bapuji Institute of Engineering and Technology</p>
+
+    <p>Branch: Artificial Intelligence and Machine Learning</p>
+
+    <p>Location: Davangere, Karnataka</p>
+
+  </div>
+
+</section>
+
+</body>
+</html>
